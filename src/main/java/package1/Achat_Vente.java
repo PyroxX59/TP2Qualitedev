@@ -30,7 +30,7 @@ public class Achat_Vente {
     }
 
     private void calculerTotal() {
-        montant = produits.size() * 10;
+        montant = produits.size() * 10.0;
     }
 
     public String getnomClient() {
