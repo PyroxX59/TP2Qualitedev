@@ -1,6 +1,6 @@
 package package2;
 
-import package1.*;
+import Controller.*;
 
 public class Main {
 
@@ -24,7 +24,7 @@ public class Main {
         t.reparerVehicule(null); // cas d'erreur
         t.afficherInfos();
 
-        Achat_Vente av = new Achat_Vente("Client X");
+        AchatVente av = new AchatVente("Client X");
         av.AjouterProduit("Pneu");
         av.afficherProduits();
     }

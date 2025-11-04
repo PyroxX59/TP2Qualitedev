@@ -1,7 +1,5 @@
 package package2;
 
-import package1.Specialite;
-
 public class Employe {
 
     private String nom;

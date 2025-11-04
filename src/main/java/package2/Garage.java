@@ -1,6 +1,6 @@
 package package2;
 
-import package1.*;
+import Controller.*;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,6 @@
-package package1;
+package Controller;
+
+import package2.IReparation;
 
 public class Tolerie implements IReparation {
 

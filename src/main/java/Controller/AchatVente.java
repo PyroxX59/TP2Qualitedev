@@ -1,15 +1,15 @@
-package package1;
+package Controller;
 
 import java.util.ArrayList;
 
-public class Achat_Vente {
+public class AchatVente {
 
-    private String NomClient;
+    private String nomClient;
     private double montant;
     private ArrayList<String> produits;
 
-    public Achat_Vente(String nom) {
-        this.NomClient = nom;
+    public AchatVente(String nom) {
+        this.nomClient = nom;
         this.montant = 0.0;
         produits = new ArrayList<String>();
     }
@@ -34,7 +34,7 @@ public class Achat_Vente {
     }
 
     public String getnomClient() {
-        return NomClient;
+        return nomClient;
     }
 
     public void SetMontant(double m){

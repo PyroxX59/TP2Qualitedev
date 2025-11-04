@@ -1,4 +1,7 @@
-package package1;
+package Controller;
+
+import package2.IAction;
+import package2.IReparation;
 
 public class Mecanique implements IReparation, IAction {
 
