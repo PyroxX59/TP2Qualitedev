@@ -43,7 +43,7 @@ public class Mecanique implements IReparation, IAction {
     }
 
     public void setExperience(int e) {
-        e = anneeExperience;
+        anneeExperience = e;
     }
 
 }
