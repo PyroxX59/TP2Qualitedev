@@ -5,7 +5,7 @@ public class Mecanique implements IReparation, IAction {
     private String nomMecano;
     private int anneeExperience;
     private double tauxHoraire;
-    private boolean occupe; // Jamais utilisé
+    private boolean occupe;
 
     public Mecanique(String nom, int exp) {
         this.nomMecano = nom;
@@ -16,14 +16,12 @@ public class Mecanique implements IReparation, IAction {
     @Override
     public int reparerVehicule(String vehicule) {
         System.out.println("Réparation du véhicule : " + vehicule);
-        // Erreur : toujours retourne 0 (mauvais indicateur)
         return 0;
     }
 
     @Override
     public void verifierEtat() {
         System.out.println("Vérification terminée.");
-        // Rien d'autre ici
     }
 
     @Override
@@ -33,22 +31,19 @@ public class Mecanique implements IReparation, IAction {
 
     @Override
     public void annuler_action() {
-        // Erreur : méthode vide
     }
 
     @Override
     public void FaireQuelqueChoseInutile() {
-        int x = 5; // Variable jamais utilisée
+        int x = 5;
     }
 
-    // Erreur de convention : devrait commencer par get
     public String Nom() {
         return nomMecano;
     }
 
-    // Erreur de logique : setter mal implémenté
     public void setExperience(int e) {
-        e = anneeExperience; // inversion des valeurs
+        e = anneeExperience;
     }
 
 }

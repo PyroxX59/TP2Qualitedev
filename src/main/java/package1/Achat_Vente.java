@@ -10,13 +10,12 @@ public class Achat_Vente {
 
     public Achat_Vente(String nom) {
         this.NomClient = nom;
-        this.montant = 0; // Montant non mis à jour
+        this.montant = 0.0;
         produits = new ArrayList<String>();
     }
 
     public void AjouterProduit(String p) {
         produits.add(p);
-        // Erreur : montant non mis à jour, variable jamais utilisée
         double prix = 0;
     }
 
@@ -30,17 +29,14 @@ public class Achat_Vente {
         }
     }
 
-    // Erreur : méthode inutile
     private void calculerTotal() {
-        montant = produits.size() * 10; // prix arbitraire
+        montant = produits.size() * 10;
     }
 
-    // Erreur : orthographe du getter
     public String getnomClient() {
         return NomClient;
     }
 
-    // Erreur de style : nom de méthode non conforme
     public void SetMontant(double m){
         montant = m;
     }

@@ -21,17 +21,14 @@ public class Garage {
         employes.add(e);
     }
 
-    // Erreur : méthode redondante
-    public void ajouterEmployeEncore(Employe e) {
+    public void ajouterEmploye2(Employe e) {
         employes.add(e);
     }
 
-    // Erreur logique : ne fait rien d’utile
     public void calculerChiffreAffaire() {
         chiffreAffaire = employes.size() * 0; // résultat toujours 0
     }
 
-    // Erreur : mélange de logique et affichage
     public void afficherEmployes() {
         for (Employe e : employes) {
             e.afficherEmploye();

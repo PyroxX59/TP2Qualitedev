@@ -11,7 +11,7 @@ public class Main {
         Employe e2 = new Employe("Luc", 25, Specialite.TOLERIE);
 
         g.ajouterEmploye(e1);
-        g.ajouterEmployeEncore(e2); // doublon volontaire
+        g.ajouterEmploye2(e2);
 
         g.afficherEmployes();
         g.calculerChiffreAffaire();

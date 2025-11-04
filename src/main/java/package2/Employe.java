@@ -9,7 +9,6 @@ public class Employe {
     private double salaire;
     private Specialite specialite;
 
-    // Erreur : constructeur sans validation
     public Employe(String n, int a, Specialite s) {
         this.nom = n;
         this.age = a;
@@ -17,17 +16,14 @@ public class Employe {
         this.salaire = 0;
     }
 
-    // Getter mal nommé
     public String Name() {
         return nom;
     }
 
-    // Setter inutile
     public void setSalaire(double s) {
         double salaire = s; // ombre la variable d’instance
     }
 
-    // Erreur : méthode vide
     public void travailler() {
     }
 

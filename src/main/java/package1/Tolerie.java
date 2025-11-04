@@ -6,7 +6,7 @@ public class Tolerie implements IReparation {
     private String description;
 
     public Tolerie() {
-        coutFixe = 100; // valeur en dur
+        coutFixe = 100;
         description = "Réparation de carrosserie";
     }
 
@@ -14,15 +14,13 @@ public class Tolerie implements IReparation {
     public int reparerVehicule(String vehicule) {
         System.out.println("Réparation de la tôle du véhicule : " + vehicule);
         if (vehicule == null) {
-            // Erreur : pas de gestion correcte du cas null
             System.out.println("Erreur : véhicule invalide");
         }
-        return 1; // Valeur arbitraire
+        return 1;
     }
 
     @Override
     public void verifierEtat() {
-        // Erreur : mauvaise logique
         if (coutFixe > 0)
             System.out.println("Tout est bon.");
         else
