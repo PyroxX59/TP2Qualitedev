@@ -26,7 +26,7 @@ public class Garage {
     }
 
     public void calculerChiffreAffaire() {
-        chiffreAffaire = employes.size() * 10;
+        chiffreAffaire = employes.size() * 10.0;
     }
 
     public void afficherEmployes() {
